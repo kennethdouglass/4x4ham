@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* Animation to add spin: add to the jQuery addClass() event handler */
+.spinit {
+	-moz-animation: spin 2s infinite linear;
+	-o-animation: spin 2s infinite linear;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+	display: inline-block;
+}
+
+@-moz-keyframes spin {
+	0% {-moz-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	100% {-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}
+}
+@-webkit-keyframes spin {
+	0% {-moz-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	100% {-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}
+}
+@-o-keyframes spin {
+	0% {-moz-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	100% {-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}
+}
+@-ms-keyframes spin {
+	0% {-moz-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	100% {-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}}
+@keyframes spin {
+	0% {-moz-transform: rotate(0deg);-o-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+	100% {-moz-transform: rotate(359deg);-o-transform: rotate(359deg);-webkit-transform: rotate(359deg);transform: rotate(359deg);}
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+ font-family: 'Open Sans', verdana, sans-serif;
+ color: #4e5d6c;
+}
+
+/* =======================================================================================
+		Page Header
+		Notes:
+======================================================================================= */
+
+header {
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+
+/* =======================================================================================
+		Global Typography
+		Notes:
+======================================================================================= */
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal;
+}
+
+a {
+  color: rgba(72,125,201,1);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* =======================================================================================
+		Global Structure / Pages
+		Notes:
+======================================================================================= */
+
+#page {
+  margin: 0 auto;
+  max-width: 940px;
+  height: 100%;
+}
+
+article {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+section {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;	
+	margin: 0 0 32px;
+	padding: 20px;
+	width: 240px;
+	height: 240px;
+	border: 5px solid #4e5d6c;
+	background: #ededed;
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.5);
+	box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+
+/* =======================================================================================
+		Footer
+		Notes:
+======================================================================================= */
+
+footer {
+  padding: 40px 0 20px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+

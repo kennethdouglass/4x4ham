@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+.hbx {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 38px;
+	height: 38px;
+	cursor: pointer;
+}
+
+.hbx em {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	opacity: 0;
+	margin: -8px 0 0 -7px;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: rgba(78,93,108,1);
+	transition: all 0.1s ease-in-out;
+}
+
+.hbx:before, .hbx:after, b, i {
+	background: rgba(78,93,108,1);
+}
+
+.hbx:before, .hbx:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 4px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	transition: all 0.1s ease-in-out;
+}
+
+.hbx:before {top: 30%;}
+.hbx:after {bottom: 30%;}
+
+b, i {
+	position: absolute;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 4px;
+	opacity: 1;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	transition: all 0.2s ease-in-out;
+}
+
+b {top: 0;}
+i {bottom: 0;}
+
+
+/* Traditional X 
+------------------------------------------------- */
+.hbx.clzx b, .hbx.clzx i {
+	opacity: 0;
+}
+
+.hbx.clzx:before {
+	top: 46%;
+	left: 0;
+	background: rgba(229,74,59,1) !important;
+	-webkit-transform: rotate(405deg);
+	transform: rotate(405deg);
+}
+
+.hbx.clzx:after {
+	top: 46%;
+	left: 0;
+	background: rgba(229,74,59,1) !important;
+	-webkit-transform: rotate(-405deg);
+	transform: rotate(-405deg);
+}
+
+
+
+/* Square Dot 
+------------------------------------------------- */
+.hbx.sq em { 
+	opacity: 1; 
+	background: rgba(229,74,59,1);
+	transition: all 0.5s ease-in-out; 
+}
+
+.hbx.sq:before {
+	top: 45%;
+	left: -44%;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.hbx.sq:after {
+	top: 45%;
+	left: 50%;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+
+/* Circled X
+------------------------------------------------- */
+.hbx.cirx em {
+	top: -10%;
+	left: -10%;
+	opacity: 1;
+	margin: 0;
+	width: 120%;
+	height: 120%;
+	border: 4px solid rgba(78,93,108,1);
+	background: transparent;
+}
+
+.hbx.cirx b, .hbx.cirx i {
+	opacity: 0;
+}
+
+.hbx.cirx:before {
+	top: 43%;
+	left: 10%;
+	width: 80%;
+	background: rgba(229,74,59,1) !important;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.hbx.cirx:after {
+	top: 43%;
+	left: 10%;
+	width: 80%;
+	background: rgba(229,74,59,1) !important;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+/* Squared X
+------------------------------------------------- */
+.hbx.sqx em {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;	
+	opacity: 1;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	border: 4px solid rgba(78,93,108,1);
+	background: transparent;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.hbx.sqx b, .hbx.sqx i {
+	opacity: 0;
+}
+
+.hbx.sqx:before {
+	top: 44%;
+	left: 11%;
+	width: 80%;
+	background: rgba(229,74,59,1) !important;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.hbx.sqx:after {
+	top: 44%;
+	left: 11%;
+	width: 80%;
+	background: rgba(229,74,59,1) !important;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.label {
+	display: block;
+	margin-top: 32px;
+}
